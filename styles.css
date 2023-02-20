@@ -51,7 +51,7 @@ label {
 
 .title {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 7rem;
+    font-size: 6rem;
     margin: 0;
     color: white;
     animation: shadows 2s linear infinite  both;
@@ -85,6 +85,12 @@ label {
 
 #submit-button:active {
     transform: scale(1);
+}
+
+@media (max-width: 1080px) {
+    .container {
+        transform: scale(0.6);
+    }
 }
 
 @keyframes shadows {
