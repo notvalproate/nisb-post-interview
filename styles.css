@@ -1,0 +1,97 @@
+body {
+    background-color: #1e172e;
+}
+
+label {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5vh;
+}
+
+.answer-box {
+    margin-top: 10vh;
+    padding: 50px;
+    border-radius: 40px;
+    background-color: #1f1537;
+}
+
+.hint {
+    text-align: center;
+}
+
+.hint-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3vh;
+    margin: 5vh 8vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px rgb(0, 17, 255);
+}
+
+.container {
+    background-color: #271d3f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20vh 5vw;
+    margin: 0 auto;
+    max-width: 1080px;
+    height: 100vh   ;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7rem;
+    margin: 0;
+    color: white;
+    animation: shadows 2s linear infinite  both;
+}
+
+#answer {
+    border-radius: 20px;
+    font-size: 3.5rem;
+    height: 4rem;
+    width: 90%;
+}
+
+#submit-button {    
+    height: 8rem;
+    width: 16rem;
+    color: white;
+    font-size: 3.5rem;
+    background-color: rgb(0,0,0,0);
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 40px;
+    box-shadow: 5px 5px rgb(36, 36, 36);
+    border-color: white;
+    transition: 100ms;
+}
+
+#submit-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgb(122, 253, 142);
+}
+
+#submit-button:active {
+    transform: scale(1);
+}
+
+@keyframes shadows {
+    0% { text-shadow: 5px 5px rgb(255, 0, 242); }
+    20% { text-shadow: 5px 5px rgb(255, 0, 0); }
+    40% { text-shadow: 5px 5px rgb(255, 123, 0); }
+    60% { text-shadow: 5px 5px rgb(7, 193, 0); }
+    80% { text-shadow: 5px 5px rgb(55, 0, 255); }
+    100% { text-shadow: 5px 5px rgb(255, 0, 242); }
+}
